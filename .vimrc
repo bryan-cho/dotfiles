@@ -1,10 +1,12 @@
 set nocompatible
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
+"***DO AFTER INSTALLING MACVIM***
+
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"call vundle#end()
  
 filetype off
 " Refer to http://dougblack.io/words/a-good-vimrc.html
