@@ -11,7 +11,9 @@ Color configurations/plugins may not be available immediately.
 Comment lines for color scheme and plugins if only VIM settings are desired.
 
 Installing NERDTree should be easy as:
+
 `cd ~/.vim/bundle`
+
 `git clone https://github.com/scrooloose/nerdtree.git`
 
 Notes:
