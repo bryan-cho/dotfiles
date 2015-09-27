@@ -2,8 +2,17 @@
 
 These are the dotfiles I use to configure VIM.
 
+1. Clone repo
+2. Move `.vim` and `.vimrc` to home directory
+3. Install NERDTree using command below
+4. If YouCompleteMe is desired, follow instructions below to install MacVim 7.4+ with Python and do some config magic to figure it out. 
+
 Color configurations/plugins may not be available immediately.
-Comment lines for color scheme and plugins if only configurations are desired.
+Comment lines for color scheme and plugins if only VIM settings are desired.
+
+Installing NERDTree should be easy as:
+```cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git```
 
 Notes:
 
