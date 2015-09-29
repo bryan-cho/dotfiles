@@ -28,6 +28,7 @@ set lazyredraw " redraw only when necessary
 set showmatch " highlight matching parenthesis
 
 " Searching
+set ignorecase " case insensitive
 set incsearch " search while typing
 set hlsearch " highlight matches
 
