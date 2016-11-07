@@ -49,9 +49,8 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/bin/sublime"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/bin/sublime:/usr/local/texlive/2015/bin/x86_64-darwin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -79,11 +78,12 @@ eval "$(ssh-agent -s)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# NEED THIS TO GET MACVIM TO WORK PROPERLY
 # Only enable this after you install the latest version of MacVim
-# alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vim='/usr/local/bin/mvim -v'
+alias sshUW='~/workspace/scripts/sshUW'
 
 export NVM_DIR="/Users/bryancho/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 PATH=/opt/local/bin:$PATH
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

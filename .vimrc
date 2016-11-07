@@ -2,12 +2,19 @@ set nocompatible
 
 "***DO AFTER INSTALLING MACVIM***
 
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-"Plugin 'VundleVim/Vundle.vim'
-"Plugin 'Valloric/YouCompleteMe'
-"call vundle#end()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+call vundle#end()
  
+" Powerline setup
+set laststatus=2
+set termencoding=utf-8
+set guifont=Source\ Code\ Pro\ for\ Powerline
+let g:Powerline_symbols = 'fancy'
+
 filetype off
 " Refer to http://dougblack.io/words/a-good-vimrc.html
 colorscheme badwolf
@@ -15,11 +22,11 @@ colorscheme badwolf
 syntax enable " enable syntax processing
 
 " Shift width
-set shiftwidth=4 " number of spaces to use for > indents
+set shiftwidth=2 " number of spaces to use for > indents
 
 " Tabs
-set tabstop=4 " number of visual spaces per <TAB>
-set softtabstop=4 " number of spaces in tab
+set tabstop=2 " number of visual spaces per <TAB>
+set softtabstop=2 " number of spaces in tab
 set expandtab " sets <TAB> to be spaces
 
 " UI Configuration
@@ -61,6 +68,6 @@ inoremap jj <esc>
 " type \s to save session then -S to reload
 nnoremap <leader>s :mksession<CR> 
 
-call pathogen#infect()                      " use pathogen
+execute pathogen#infect()     
 
-map <C-n> :NERDTreeToggle<CR>
+"map <C-n> :NERDTreeToggle<CR>
