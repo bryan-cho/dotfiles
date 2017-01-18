@@ -52,5 +52,5 @@ Comment lines for color scheme and plugins if only VIM settings are desired.
   * Install `Python` and `MacVim` first!
 * Powerline may not show the fonts properly at first. Install fonts using this: [https://github.com/powerline/fonts](https://github.com/powerline/fonts)
   * I found `Roboto Mono Thin` to be nice looking with font anti-aliasing on.
-
+* Setting up Powerline on Ubuntu is easy with this link: [http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin](http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin)
 
