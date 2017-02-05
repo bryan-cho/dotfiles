@@ -1,6 +1,6 @@
 # Dotfiles
 
-These are the dotfiles I use to configure VIM and Zshell.
+These are the dotfiles I use to configure VIM and Z shell.
 
 ## Contents
 * `.vim` - contains color configurations
@@ -54,3 +54,29 @@ Comment lines for color scheme and plugins if only VIM settings are desired.
   * I found `Roboto Mono Thin` to be nice looking with font anti-aliasing on.
 * Setting up Powerline on Ubuntu is easy with this link: [http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin](http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin)
 
+## General Setup
+
+Some things to install when first setting up a new machine:
+
+1. OneNote
+2. [Spotify](https://www.spotify.com/us/)
+3. [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+4. KakaoTalk
+5. [Dotfiles](https://github.com/bryanc208/dotfiles)
+6. [Spectacle](https://www.spectacleapp.com/)
+7. git
+8. [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+9. Homebrew
+10. Python + pip
+11. Everything required by dotfiles
+
+Some things to setup:
+
+1. SSH key for Github
+2. Login to services (App Store, Chrome, etc.)
+3. Display size, trackpad sensitivity, etc.
+
+Nice to haves:
+
+1. LaTeX
+2. MacDown
