@@ -13,10 +13,12 @@ These are the dotfiles I use to configure VIM and Z shell.
 * [Zsh](https://github.com/robbyrussell/oh-my-zsh)
 * `Python 2.7`
 * `MacVim` (If using Mac)
+* `CMake`
 
 ```bash
 brew install python
 brew install macvim
+brew install cmake
 ```
 
 Note: If Python was installed through a package obtained from the official website, it may need to be removed prior to installing using Homebrew.
@@ -25,8 +27,16 @@ Note: If Python was installed through a package obtained from the official websi
 
 1. Clone repo
 2. Move `.vim`, `.vimrc`, `.zshrc` to home directory
-3. Install NERDTree using command below
-4. Open VIM and run `:PluginInstall` and `BundleInstall` to install `YouCompleteMe` and `Powerline`
+3. Install [Vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
+4. Open VIM and run `:PluginInstall` and `:BundleInstall` to install `YouCompleteMe` and `Powerline`
+5. Install NERDTree using command below
+
+*Note*: sometimes you may need to manually install YouCompleteMe after running the above commands:
+
+```bash
+cd ~/.vim/bundle/YouCompleteMe
+python ./install.py
+```
 
 Installing NERDTree should be easy as:
 
