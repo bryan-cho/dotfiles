@@ -10,9 +10,9 @@ These are the dotfiles I use to configure VIM and Z shell.
 ## Prerequisites
 
 * [Homebrew](http://brew.sh/)
+* [Zsh](https://github.com/robbyrussell/oh-my-zsh)
 * `Python 2.7`
 * `MacVim` (If using Mac)
-* `Oh My Zsh`
 
 ```bash
 brew install python
