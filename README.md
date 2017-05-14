@@ -90,3 +90,9 @@ Nice to haves:
 
 1. LaTeX
 2. MacDown
+
+## Extras
+
+Some extra stuff that might be nice depending on what I'm working on:
+
+1. Typescript highlighting: [link](https://github.com/leafgarland/typescript-vim)
