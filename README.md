@@ -96,3 +96,4 @@ Nice to haves:
 Some extra stuff that might be nice depending on what I'm working on:
 
 1. Typescript highlighting: [link](https://github.com/leafgarland/typescript-vim)
+2. Remap Home and End keys if using keyboard: [link](https://apple.stackexchange.com/questions/16135/remap-home-and-end-to-beginning-and-end-of-line)
