@@ -8,7 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 call vundle#end()
- 
+
 " Powerline setup
 set laststatus=2
 set termencoding=utf-8
@@ -45,9 +45,6 @@ set hlsearch " highlight matches
 " \<space> to turn off hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
 
-" Folding
-" Use when necessary, I don't think I'll use for now
-
 " Movement
 " move vertically by visual line
 nnoremap j gj
@@ -66,8 +63,16 @@ inoremap jj <esc>
 
 " save session
 " type \s to save session then -S to reload
-nnoremap <leader>s :mksession<CR> 
+nnoremap <leader>s :mksession<CR>
 
-execute pathogen#infect()     
+execute pathogen#infect()
 
 "map <C-n> :NERDTreeToggle<CR>
+
+" highlight unnecessary whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
