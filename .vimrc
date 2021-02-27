@@ -1,20 +1,5 @@
 set nocompatible
 
-"***DO AFTER INSTALLING MACVIM***
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-call vundle#end()
-
-" Powerline setup
-set laststatus=2
-set termencoding=utf-8
-set guifont=Source\ Code\ Pro\ for\ Powerline
-let g:Powerline_symbols = 'fancy'
-
 filetype off
 " Refer to http://dougblack.io/words/a-good-vimrc.html
 colorscheme badwolf
@@ -60,14 +45,6 @@ nnoremap gV `[v`]
 
 " Leader Shortcuts
 inoremap jj <esc>
-
-" save session
-" type \s to save session then -S to reload
-nnoremap <leader>s :mksession<CR>
-
-execute pathogen#infect()
-
-"map <C-n> :NERDTreeToggle<CR>
 
 " highlight unnecessary whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
